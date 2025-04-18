@@ -32,6 +32,9 @@ function Home() {
           <h1 className="text-3xl sm:text-4xl md:text-[3rem] p-2 m-2 font-bold text-center text-black drop-shadow-md">
             HEY, I'M BARATH G
           </h1>
+          <h2 className="m-5 p-4 w-[90%] md:w-[80%] text-lg text-black text-center leading-relaxed">
+  A passionate Full Stack Web Developer with strong problem-solving skills and a love for creating efficient, real-world solutions. Currently diving deep into the MERN stack and exploring Machine Learning on the side.
+</h2>
 
           {/* Optional Typewriter (uncomment if needed) */}
           {/* <Typewriter 
