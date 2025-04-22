@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-gray-100 to-white min-h-screen flex flex-col items-center justify-start py-16 px-4">
+    <div id="contact" className="bg-gradient-to-b from-gray-100 to-white min-h-screen flex flex-col items-center justify-start py-16 px-4">
       <h2 className="text-4xl font-bold text-center uppercase tracking-wider">Contact</h2>
       <div className="w-20 h-1 bg-yellow-500 my-4 rounded-full" />
       <p className="text-center text-lg text-gray-600 max-w-2xl mb-10">

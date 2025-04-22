@@ -10,59 +10,60 @@ export default function Navbar() {
           
           <div className="flex items-center justify-between">
             <div>
-          <h1 className="text-black hover:text-yellow-400 transition-colors duration-200 ease-in-out font-medium text-[1.2rem] cursor-pointer">
-              Barath G
-            </h1>
-            </div> 
-          </div>
-          <div className="sm:hidden ">
-          <button
-  type="button"
-  className="inline-flex items-center rounded-md p-2 text-black"
-  aria-controls="mobile-menu"
-  aria-expanded={mobileMenuOpen}
-  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
->
-  {mobileMenuOpen ? (
-    <svg
-      className="size-6"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="currentColor"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M6 18L18 6M6 6l12 12"
-      />
-    </svg>
-  ) : (
-    <svg
-      className="size-6"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="currentColor"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-      />
-    </svg>
-  )}
-</button>
-
+              <h1 className="text-black hover:text-yellow-400 transition-colors duration-200 ease-in-out font-medium text-[1.2rem] cursor-pointer">
+                Barath G
+              </h1>
             </div>
+          </div>
+
+          <div className="sm:hidden">
+            <button
+              type="button"
+              className="inline-flex items-center rounded-md p-2 text-black"
+              aria-controls="mobile-menu"
+              aria-expanded={mobileMenuOpen}
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? (
+                <svg
+                  className="size-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  className="size-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              )}
+            </button>
+          </div>
+
           <div className="hidden sm:block">
             <div className="flex space-x-4">
               {[
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
-].map((item) => (
+                { name: "Home", href: "#home" },
+                { name: "About", href: "#about" },
+                { name: "Projects", href: "#projects" },
+                { name: "Contact", href: "#contact" },
+              ].map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
@@ -76,15 +77,15 @@ export default function Navbar() {
         </div>
       </div>
 
-
+      {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="sm:hidden" id="mobile-menu">
+        <div className="sm:hidden bg-white w-full shadow-md" id="mobile-menu">
           <div className="space-y-1 px-2 pt-2 pb-3">
             {[
-              { name: "Home", href: "#" },
-              { name: "About", href: "#" },
-              { name: "Projects", href: "#" },
-              { name: "Contact", href: "#" },
+              { name: "Home", href: "#home" },
+              { name: "About", href: "#about" },
+              { name: "Projects", href: "#projects" },
+              { name: "Contact", href: "#contact" },
             ].map((item) => (
               <a
                 key={item.name}

@@ -53,7 +53,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="bg-gradient-to-b from-gray-100 to-white py-16 px-4">
+    <section id="projects" className="bg-gradient-to-b from-gray-100 to-white py-16 px-4">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold uppercase">Projects</h2>
         <div className="w-20 h-1 bg-yellow-500 mx-auto my-4 rounded-full" />

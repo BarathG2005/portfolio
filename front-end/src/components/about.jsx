@@ -3,7 +3,6 @@ import cv from '../assets/Barath_G_resume.pdf';
 export default function About() {
   return (
     <div id="about" className="min-h-screen bg-white p-10 text-black">
-      {/* Header Section */}
       <div className="flex flex-col items-center mb-10 p-5">
         <h1 className="text-4xl text-center tracking-widest font-bold p-2 m-7">
           ABOUT ME
@@ -46,7 +45,50 @@ export default function About() {
               <li>JavaScript</li>
               <li>SQL</li>
             </ul>
-            
+            <ul className="flex flex-wrap">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Tailwind CSS</li>
+              <li>Bootstrap</li>
+            </ul>
+
+            <ul className="flex flex-wrap">
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>MongoDB</li>
+              <li>MySQL</li>
+            </ul>
+
+            <ul className="flex flex-wrap">
+              <li>Redux</li>
+              <li>Axios</li>
+              <li>JWT</li>
+              <li>Mongoose</li>
+            </ul>
+
+            <ul className="flex flex-wrap">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+              <li>Postman</li>
+              <li>npm</li>
+            </ul>
+
+            <ul className="flex flex-wrap">
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>scikit-learn</li>
+              <li>Matplotlib</li>
+            </ul>
+
+            <ul className="flex flex-wrap">
+              <li>REST APIs</li>
+              <li>Authentication</li>
+              <li>Authorization</li>
+              <li>Responsive Design</li>
+              <li>Deployment (Render, Vercel)</li>
+            </ul>
           </div>
         </div>
       </div>

@@ -49,11 +49,12 @@ function Home() {
         </h2>
 
        
-        <button
+        <a key="Projects" href="#projects"><button
           className="w-40 sm:w-48 md:w-52 lg:w-60 px-4 sm:px-6 py-2 sm:py-3 bg-yellow-400 font-bold text-black text-sm sm:text-base rounded-md tracking-wider transition-transform duration-200 hover:scale-105"
-        >
+         >
           PROJECTS
         </button>
+        </a>
       </div>
     </>
   );
