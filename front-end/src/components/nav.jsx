@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Pro from "../assets/wal.jpg";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -7,15 +8,19 @@ export default function Navbar() {
     <nav className="bg-gray-100 fixed top-0 left-0 w-full h-18 z-60 shadow-md">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between w-full">
-          
+          {/* Logo and Name */}
           <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-black hover:text-yellow-400 transition-colors duration-200 ease-in-out font-medium text-[1.2rem] cursor-pointer">
-                Barath G
-              </h1>
-            </div>
+            <img
+              src={Pro}
+              alt="Profile"
+              className="h-10 w-10 rounded-full mr-2"
+            />
+            <h1 className="text-black hover:text-yellow-400 transition-colors duration-200 ease-in-out font-medium text-[1.2rem] cursor-pointer">
+              Barath G
+            </h1>
           </div>
 
+          {/* Mobile menu button */}
           <div className="sm:hidden">
             <button
               type="button"
@@ -56,6 +61,7 @@ export default function Navbar() {
             </button>
           </div>
 
+          {/* Desktop menu */}
           <div className="hidden sm:block">
             <div className="flex space-x-4">
               {[
